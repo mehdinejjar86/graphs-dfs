@@ -143,7 +143,7 @@ void printDFS(graph *graph, int *arr)
         top++;
         arr[top] = vertex;
         int n = top;
-        printf("\nTraversing with DFS revusrive from vertex %d\n", vertex);
+        printf("\nTraversing with DFS recursive from vertex %d\n", vertex);
         dfs(graph, vertex, arr, n, &top);
         for (int i = 0; i <= top; i++)
             printf("  %d", arr[i]);
